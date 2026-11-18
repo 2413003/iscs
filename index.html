@@ -34,10 +34,12 @@ p{margin:0 0 1em;max-width:68ch}
 .util a:hover{text-decoration:underline}
 header.site{border-bottom:1px solid #2c4170;background:var(--navy);position:sticky;top:0;z-index:5}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
-.brand{display:block;line-height:0;border-radius:4px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;border-radius:4px}
+.brand .logo{flex:none}
+.brand span{color:#dfe6f1;font-size:.85rem;line-height:1.25;border-left:1px solid #2c4170;padding-left:14px}
 .logo{display:block;height:44px;width:auto;aspect-ratio:240.2/95}
-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;flex-wrap:wrap}
-nav a{display:block;padding:8px 12px;border-radius:6px;color:#fff;text-decoration:none;font-weight:500}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+nav a{display:block;padding:8px 10px;font-size:.95rem;border-radius:6px;color:#fff;text-decoration:none;font-weight:500}
 nav a:hover{background:rgba(255,255,255,.12)}
 nav a.cta{background:var(--teal);color:#fff}
 nav a.cta:hover{background:var(--teal-dark)}
@@ -113,8 +115,9 @@ footer .legal{border-top:1px solid #2c4170;margin-top:32px;padding-top:18px;font
 
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="ISCS, Investor Service Compensation Scheme: home">
-      <svg class="logo" role="img" aria-hidden="true" focusable="false"><use href="#iscs-logo"/></svg>
+    <a class="brand" href="#top">
+      <svg class="logo" aria-hidden="true" focusable="false"><use href="#iscs-logo"/></svg>
+      <span>Investor Service<br>Compensation Scheme</span>
     </a>
     <nav aria-label="Main">
       <ul>
