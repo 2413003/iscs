@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ISCS | Investor Service Compensation Scheme</title>
 <meta name="description" content="Check whether your investments are protected and find out how to make a claim.">
+<link rel="icon" href="iscs-favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
@@ -27,19 +28,17 @@ h3{font-size:1.2rem}
 p{margin:0 0 1em;max-width:68ch}
 
 /* utility bar + header */
-.util{background:var(--navy);color:#dfe6f1;font-size:.9rem}
+.util{background:#0e1d38;color:#dfe6f1;font-size:.9rem}
 .util .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
 .util a{color:#dfe6f1;margin-left:18px;text-decoration:none}
 .util a:hover{text-decoration:underline}
-header.site{border-bottom:1px solid var(--line);background:var(--white);position:sticky;top:0;z-index:5}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
-.mark{width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font:700 .95rem var(--serif);letter-spacing:.02em}
-.brand b{font:700 1.35rem var(--serif);display:block;line-height:1}
-.brand small{font-size:.78rem;color:var(--muted)}
+header.site{border-bottom:1px solid #2c4170;background:var(--navy);position:sticky;top:0;z-index:5}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{display:block;line-height:0;border-radius:4px}
+.logo{display:block;height:44px;width:auto;aspect-ratio:240.2/95}
 nav ul{list-style:none;margin:0;padding:0;display:flex;gap:6px;flex-wrap:wrap}
-nav a{display:block;padding:8px 12px;border-radius:6px;color:var(--ink);text-decoration:none;font-weight:500}
-nav a:hover{background:var(--sand)}
+nav a{display:block;padding:8px 12px;border-radius:6px;color:#fff;text-decoration:none;font-weight:500}
+nav a:hover{background:rgba(255,255,255,.12)}
 nav a.cta{background:var(--teal);color:#fff}
 nav a.cta:hover{background:var(--teal-dark)}
 
@@ -83,6 +82,7 @@ section.tint{background:var(--sand)}
 /* footer */
 footer{background:var(--navy);color:#c5d1e4;padding:44px 0 28px;font-size:.95rem}
 footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+footer .logo{height:40px;margin-bottom:14px}
 footer h3{color:#fff;font:700 1rem var(--sans);margin-bottom:10px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin:6px 0}
@@ -100,6 +100,10 @@ footer .legal{border-top:1px solid #2c4170;margin-top:32px;padding-top:18px;font
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="iscs-logo" viewBox="29 26.5 240.2 95"><g transform="translate(26,118.9)"><path fill="#ffffff" d="M11.82 0.0V-65.7H31.08V0.0ZM3.06 -51.54V-65.7H31.08V-51.54ZM73.74 2.1Q59.79 2.1 51.855000000000004 -3.705Q43.92 -9.51 43.41 -19.95H60.51Q60.92999999999999 -16.77 64.245 -14.325Q67.56 -11.879999999999999 74.1 -11.879999999999999Q79.16999999999999 -11.879999999999999 82.48499999999999 -13.59Q85.8 -15.299999999999999 85.8 -18.57Q85.8 -21.45 83.25 -23.22Q80.69999999999999 -24.99 74.25 -25.619999999999997L69.09 -26.16Q57.269999999999996 -27.39 51.33 -32.745000000000005Q45.39 -38.1 45.39 -46.53Q45.39 -53.55 48.87 -58.199999999999996Q52.349999999999994 -62.849999999999994 58.5 -65.235Q64.65 -67.62 72.57 -67.62Q85.25999999999999 -67.62 93.06 -62.055Q100.86 -56.489999999999995 101.28 -45.93H84.18Q83.78999999999999 -49.14 80.865 -51.39Q77.94 -53.64 72.39 -53.64Q67.92 -53.64 65.295 -51.96Q62.67 -50.28 62.67 -47.43Q62.67 -44.64 64.94999999999999 -43.2Q67.22999999999999 -41.76 72.33 -41.16L77.49 -40.62Q89.61 -39.36 96.345 -33.93Q103.08 -28.5 103.08 -19.47Q103.08 -12.84 99.47999999999999 -7.995Q95.88 -3.15 89.29499999999999 -0.5249999999999999Q82.71 2.1 73.74 2.1ZM145.05 2.34Q136.5 2.34 130.215 -0.4950000000000001Q123.92999999999999 -3.33 119.745 -8.145Q115.56 -12.959999999999999 113.49000000000001 -19.02Q111.42 -25.08 111.42 -31.5V-33.839999999999996Q111.42 -40.589999999999996 113.58 -46.739999999999995Q115.74 -52.89 119.98499999999999 -57.675Q124.22999999999999 -62.46 130.5 -65.25Q136.76999999999998 -68.03999999999999 144.99 -68.03999999999999Q153.84 -68.03999999999999 160.66500000000002 -64.59Q167.49 -61.14 171.57 -55.05Q175.64999999999998 -48.96 176.13 -40.98H157.35Q156.87 -45.449999999999996 153.765 -48.525Q150.66 -51.6 144.99 -51.6Q140.13 -51.6 136.965 -49.2Q133.8 -46.8 132.24 -42.56999999999999Q130.68 -38.339999999999996 130.68 -32.67Q130.68 -27.33 132.10500000000002 -23.085Q133.53 -18.84 136.70999999999998 -16.47Q139.89 -14.1 145.05 -14.1Q148.92 -14.1 151.62 -15.48Q154.32 -16.86 155.91 -19.335Q157.5 -21.81 157.89 -25.08H176.67Q176.22 -16.89 172.01999999999998 -10.74Q167.82 -4.59 160.875 -1.125Q153.93 2.34 145.05 2.34ZM213.78 2.1Q199.83 2.1 191.895 -3.705Q183.96 -9.51 183.45000000000002 -19.95H200.55Q200.97 -16.77 204.285 -14.325Q207.6 -11.879999999999999 214.14 -11.879999999999999Q219.21 -11.879999999999999 222.525 -13.59Q225.84 -15.299999999999999 225.84 -18.57Q225.84 -21.45 223.29000000000002 -23.22Q220.74 -24.99 214.29000000000002 -25.619999999999997L209.13 -26.16Q197.31 -27.39 191.37 -32.745000000000005Q185.43 -38.1 185.43 -46.53Q185.43 -53.55 188.91000000000003 -58.199999999999996Q192.39000000000001 -62.849999999999994 198.54000000000002 -65.235Q204.69 -67.62 212.61 -67.62Q225.3 -67.62 233.10000000000002 -62.055Q240.9 -56.489999999999995 241.32 -45.93H224.22Q223.83 -49.14 220.90500000000003 -51.39Q217.98000000000002 -53.64 212.43 -53.64Q207.96 -53.64 205.335 -51.96Q202.71 -50.28 202.71 -47.43Q202.71 -44.64 204.99 -43.2Q207.27 -41.76 212.37 -41.16L217.53 -40.62Q229.65 -39.36 236.385 -33.93Q243.12 -28.5 243.12 -19.47Q243.12 -12.84 239.52 -7.995Q235.92000000000002 -3.15 229.335 -0.5249999999999999Q222.75 2.1 213.78 2.1Z"/><path fill="#ffffff" d="M19.335 -72.24Q13.92 -72.24 11.34 -75.04499999999999Q8.76 -77.85 8.76 -82.23Q8.76 -86.61 11.350714285714286 -89.41499999999999Q13.94142857142857 -92.22 19.29 -92.22Q24.75 -92.22 27.285 -89.41499999999999Q29.82 -86.61 29.82 -82.23Q29.82 -77.85 27.285 -75.04499999999999Q24.75 -72.24 19.335 -72.24Z"/></g></symbol>
+</svg>
+
 <div class="util">
   <div class="wrap">
     <span>Helpline: [phone number]</span>
@@ -109,9 +113,8 @@ footer .legal{border-top:1px solid #2c4170;margin-top:32px;padding-top:18px;font
 
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="ISCS home">
-      <span class="mark" aria-hidden="true">ISCS</span>
-      <span><b>ISCS</b><small>Investor Service Compensation Scheme</small></span>
+    <a class="brand" href="#top" aria-label="ISCS, Investor Service Compensation Scheme: home">
+      <svg class="logo" role="img" aria-hidden="true" focusable="false"><use href="#iscs-logo"/></svg>
     </a>
     <nav aria-label="Main">
       <ul>
@@ -148,7 +151,7 @@ footer .legal{border-top:1px solid #2c4170;margin-top:32px;padding-top:18px;font
       <h2>Protection limits</h2>
       <dl>
         <dt>Investments, per person, per firm</dt>
-        <dd>£[limit]</dd>
+        <dd>£5,000</dd>
         <dt>Joint accounts</dt>
         <dd>£[limit]</dd>
       </dl>
@@ -239,7 +242,7 @@ footer .legal{border-top:1px solid #2c4170;margin-top:32px;padding-top:18px;font
   <div class="wrap">
     <div class="cols">
       <div>
-        <h3>ISCS</h3>
+        <svg class="logo" role="img" aria-label="ISCS" focusable="false"><use href="#iscs-logo"/></svg>
         <p>Investor Service Compensation Scheme. [Legal entity name and registration details.]</p>
       </div>
       <div>
